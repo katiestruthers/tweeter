@@ -12,11 +12,16 @@
   background-color: #f4f1ec;
 }
 
-::placeholder {
+.new-tweet > form > textarea::placeholder {
   font-weight: bold;
 }
 
-#tweet-button {
+.new-tweet > form > footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-tweet > form > footer > button {
   border: none;
   background-color: #4056A1;
   color: #FFFFFF;
@@ -27,9 +32,4 @@
 .counter {
   display: inline-flex;
   font-family: 'Bungee', cursive;
-}
-
-#tweet-footer {
-  display: flex;
-  justify-content: space-between;
 }
