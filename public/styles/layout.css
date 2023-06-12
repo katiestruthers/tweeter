@@ -25,8 +25,9 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-#title {
-  font-family: 'Bungee', cursive;
-  font-size: 44px;
-  padding-top: 0.4em;
+ main {
+  display: flex;
+  margin: 0 5%;
+  align-items: center;
+  flex-direction: column;
  }
