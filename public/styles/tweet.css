@@ -34,6 +34,10 @@
   font-weight: bold;
 }
 
+div.tweet-text {
+  height: 75px;
+}
+
 .tweet-text > p {
   margin: 0px 12px;
 }
