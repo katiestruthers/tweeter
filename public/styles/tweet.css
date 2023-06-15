@@ -34,11 +34,14 @@
   font-weight: bold;
 }
 
-div.tweet-text {
+.tweet > div {
+  border: none;
+  border-bottom: 5px solid #545149;
+  width: 600px;
   height: 75px;
 }
 
-.tweet-text > p {
+.tweet > div > p {
   margin: 0px 12px;
 }
 

@@ -4,7 +4,7 @@
   flex-direction: column;
 }
 
-.tweet-text {
+#tweet-text {
   border: none;
   border-bottom: 5px solid #545149;
   width: 600px;

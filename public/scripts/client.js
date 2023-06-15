@@ -16,7 +16,7 @@ $(document).ready(function() {
         </span>
         <span>${tweet.user.handle}</span>
       </header>
-      <div class="tweet-text">
+      <div>
         <p>${tweet.content.text}</p>
       </div>
       <footer>
