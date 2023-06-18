@@ -66,7 +66,10 @@ $(document).ready(function() {
 
     $.ajax({
       type: 'POST',
+      url: 'http://localhost:8080/tweets',
       data,
+    }).then(function() {
+      loadTweets();
     });
   });
 });
