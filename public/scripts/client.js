@@ -39,6 +39,9 @@ $(document).ready(function() {
   };
 
   const renderTweets = function(tweets) {
+    // Empty container to avoid reduplication of data
+    $('#tweets-container').empty();
+
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $('#tweets-container').append($tweet);
