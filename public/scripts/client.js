@@ -70,9 +70,11 @@ $(document).ready(function() {
     const value = dataArr[1];
     if (!value) {
       $("#form-error-empty").slideDown();
+      return;
     }
     if (value.length > 140) {
       $("#form-error-too-long").slideDown();
+      return;
     }
 
     $.ajax({
