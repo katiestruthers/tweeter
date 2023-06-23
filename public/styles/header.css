@@ -1,6 +1,7 @@
 #main-header {
   display: flex;
   height: 520px;
+  padding-top: 120px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
