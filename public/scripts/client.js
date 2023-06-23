@@ -85,7 +85,8 @@ $(document).ready(function() {
       loadTweets();
     });
 
-    // Clear the input field
+    // Clear the input field & reset counter
     $('#tweet-text').val('');
+    $('.counter').val('140');
   });
 });
