@@ -67,7 +67,7 @@ $(document).ready(function() {
 
     // Validate correct form submission
     const dataArr = data.split('=');
-    const value = dataArr[1];
+    const value = dataArr[1].replaceAll('%20', ' ');
     if (!value) {
       $("#form-error-empty").slideDown();
       return;
