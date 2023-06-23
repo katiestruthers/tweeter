@@ -15,10 +15,3 @@
     width: 33%;
   }
 }
-
-/* Extra-large Screen Breakpoint */
-@media only screen and (min-width: 1201px) {
-  #main-header {
-    width: 44%;
-  }
-}

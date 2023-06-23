@@ -41,19 +41,12 @@ main {
 @media only screen and (min-width: 1024px) {
   #layout {
     display: flex;
-    padding: 100px 50px;
+    padding: 200px 75px 75px 50px;
     justify-content: space-between;
   }
 
   main {
     width: 44%;
-    padding-right: 50px;
-  }
-}
-
-/* Extra-large Screen Breakpoint */
-@media only screen and (min-width: 1201px) {
-  main {
-    width: 55%;
+    margin-right: 3em;
   }
 }
