@@ -38,6 +38,10 @@
   padding: 6px 16px;
 }
 
+.new-tweet > form > footer > button:hover {
+  box-shadow: 5px 5px #c5cbe3;
+}
+
 .counter {
   display: inline-flex;
   font-family: 'Bungee', cursive;

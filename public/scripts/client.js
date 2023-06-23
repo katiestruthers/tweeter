@@ -82,5 +82,8 @@ $(document).ready(function() {
     }).then(function() {
       loadTweets();
     });
+
+    // Clear the input field
+    $('#tweet-text').val('');
   });
 });
