@@ -7,3 +7,17 @@
   background-color: #d89820;
   background-image: url(../images/header-background-image.png);
 }
+
+/* Desktop Breakpoint */
+@media only screen and (min-width: 1024px) {
+  #main-header {
+    width: 33%;
+  }
+}
+
+/* Extra-large Screen Breakpoint */
+@media only screen and (min-width: 1201px) {
+  #main-header {
+    width: 44%;
+  }
+}

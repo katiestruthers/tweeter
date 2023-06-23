@@ -25,9 +25,30 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- main {
+main {
   display: flex;
   margin: 0 5%;
   align-items: center;
   flex-direction: column;
- }
+}
+
+/* Desktop Breakpoint */
+@media only screen and (min-width: 1024px) {
+  #layout {
+    display: flex;
+    padding: 100px 50px;
+    justify-content: space-between;
+  }
+
+  main {
+    width: 44%;
+    padding-right: 50px;
+  }
+}
+
+/* Extra-large Screen Breakpoint */
+@media only screen and (min-width: 1201px) {
+  main {
+    width: 55%;
+  }
+}

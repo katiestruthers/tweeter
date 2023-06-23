@@ -3,6 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -40,35 +41,37 @@
     </nav>
 
     <!-- Header -->
-    <header id="main-header">
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Katie Struthers</h2>
-      </div>
-  </header>
+    <div id="layout">
+      <header id="main-header">
+        <div>
+            <img src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div>
+            <h2>Katie Struthers</h2>
+        </div>
+    </header>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
+      <!-- Page-specific (main) content here -->
+      <main>
 
-      <!-- New Tweet Form -->
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets">
-          <p class="form-error" id="form-error-empty">Error: Cannot post an empty tweet.</p>
-          <p class="form-error" id="form-error-too-long">Error: Tweet exceeds maximum character limit of 140.</p>
-          <label for="tweet-text"></label>
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <footer>
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </footer>
-        </form>
-      </section>
+        <!-- New Tweet Form -->
+        <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <form method="POST" action="/tweets">
+            <p class="form-error" id="form-error-empty">Error: Cannot post an empty tweet.</p>
+            <p class="form-error" id="form-error-too-long">Error: Tweet exceeds maximum character limit of 140.</p>
+            <label for="tweet-text"></label>
+            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            <footer>
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </footer>
+          </form>
+        </section>
 
-      <!-- List of All Tweets -->
-      <section id="tweets-container"></section>
-    </main>
+        <!-- List of All Tweets -->
+        <section id="tweets-container"></section>
+      </main>
+    </div>
 </html>
