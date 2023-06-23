@@ -4,6 +4,15 @@
   flex-direction: column;
 }
 
+.form-error {
+  display: none;
+  color: red;
+  border: solid;
+  padding: 10px;
+  border-width: medium;
+  font-weight: bold;
+}
+
 #tweet-text {
   border: none;
   border-bottom: 5px solid #545149;

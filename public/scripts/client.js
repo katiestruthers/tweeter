@@ -60,14 +60,16 @@ $(document).ready(function() {
     event.preventDefault();
     const data = $(this).serialize();
 
+    $(".form-error").slideUp();
+
     // Validate correct form submission
     const dataArr = data.split('=');
     const value = dataArr[1];
     if (!value) {
-      alert('Cannot post an empty tweet.');
+      $("#form-error-empty").slideDown();
     }
     if (value.length > 140) {
-      alert('Tweet exceeds maximum character limit of 140.');
+      $("#form-error-too-long").slideDown();
     }
 
     $.ajax({
