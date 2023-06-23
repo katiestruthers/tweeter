@@ -24,6 +24,10 @@ nav {
   align-items: center;
 }
 
+.red {
+  color: red;
+}
+
 /* Desktop Breakpoint */
 @media only screen and (min-width: 1024px) {
   nav {
