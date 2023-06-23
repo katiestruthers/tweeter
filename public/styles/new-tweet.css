@@ -21,6 +21,10 @@
   background-color: #f4f1ec;
 }
 
+.new-tweet > form > textarea {
+  outline: none;
+}
+
 .new-tweet > form > textarea::placeholder {
   font-weight: bold;
 }
